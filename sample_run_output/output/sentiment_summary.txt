@@ -1,0 +1,50 @@
+================================================================================
+SENTIMENT EXTRACTION SUMMARY
+Generated: 2025-10-22 14:00:16
+================================================================================
+
+1. INPUT DATA
+--------------------------------------------------------------------------------
+Total sentiment records processed: 196
+Records with dates: 99
+
+2. SENTIMENT STATISTICS
+--------------------------------------------------------------------------------
+Mean sentiment score: 0.1751
+Std deviation: 0.8382
+Min score: -1.0000
+Max score: 1.0000
+
+Positive sentiments: 102 (52.0%)
+Neutral sentiments: 33 (16.8%)
+Negative sentiments: 61 (31.1%)
+
+3. DAILY AGGREGATION
+--------------------------------------------------------------------------------
+Unique dates: 1
+Date range: 2025-10-02 to 2025-10-02
+Avg sentiments per day: 99.0
+
+TOP 5 HIGHEST SENTIMENT DATES:
+  2025-10-02 | Score: 0.1301 | Count: 99
+
+TOP 5 LOWEST SENTIMENT DATES:
+  2025-10-02 | Score: 0.1301 | Count: 99
+
+4. MERGED DATASET
+--------------------------------------------------------------------------------
+Final dataset shape: (904, 15)
+Total columns: 15
+Records with sentiment data: 41
+
+5. OUTPUT FILES
+--------------------------------------------------------------------------------
+  - sample_run_output/datafiles/sentiment_extraction/detailed_sentiment_scores.csv
+  - sample_run_output/datafiles/sentiment_extraction/daily_sentiment_aggregated.csv
+  - sample_run_output/datafiles/sentiment_extraction/merged_with_sentiment.csv
+  - data/processed/merged_with_sentiment.csv
+  - sample_run_output/output/sentiment_summary.txt
+
+================================================================================
+SENTIMENT EXTRACTION COMPLETED SUCCESSFULLY
+================================================================================

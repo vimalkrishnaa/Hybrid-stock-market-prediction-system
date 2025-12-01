@@ -1,0 +1,33 @@
+{
+  "test_metrics": {
+    "rmse": 0.30842926862019576,
+    "mae": 0.27587575724778285,
+    "mape": 115.17975516340975,
+    "r2_score": -0.16030472457538592,
+    "directional_accuracy": 46.04651162790698
+  },
+  "test_samples": 431,
+  "model_configuration": {
+    "lookback": 60,
+    "n_features": 13,
+    "batch_size": 32,
+    "epochs": 70,
+    "learning_rate": 0.001
+  },
+  "feature_columns": [
+    "Open",
+    "High",
+    "Low",
+    "Close",
+    "Volume",
+    "Returns",
+    "MA_5",
+    "MA_10",
+    "MA_20",
+    "Volatility",
+    "Momentum",
+    "sentiment_score",
+    "garch_volatility"
+  ],
+  "timestamp": "2025-10-24 19:50:24"
+}

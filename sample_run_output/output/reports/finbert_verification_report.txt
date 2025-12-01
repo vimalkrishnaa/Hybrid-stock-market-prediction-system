@@ -1,0 +1,72 @@
+================================================================================
+FINBERT SENTIMENT INTEGRATION VERIFICATION REPORT
+Generated: 2025-10-24 19:04:48
+================================================================================
+
+1. DATASET OVERVIEW
+--------------------------------------------------------------------------------
+File: data/extended/processed/hybrid_data_with_sentiment.csv
+Shape: (3980, 16)
+Date Range: 2025-04-27 00:00:00+00:00 to 2025-10-24 00:00:00-04:00
+Symbols: 31
+
+2. FEATURES
+--------------------------------------------------------------------------------
+Total Features: 12
+Feature List:
+   1. Open                 ✓
+   2. High                 ✓
+   3. Low                  ✓
+   4. Close                ✓
+   5. Volume               ✓
+   6. Returns              ✓
+   7. MA_5                 ✓
+   8. MA_10                ✓
+   9. MA_20                ✓
+  10. Volatility           ✓
+  11. Momentum             ✓
+  12. sentiment_score      ✓
+
+3. SENTIMENT STATISTICS
+--------------------------------------------------------------------------------
+Mean:   0.001013
+Std:    0.011440
+Min:    0.000000
+Max:    0.130120
+Non-zero: 31 (0.78%)
+
+4. SENTIMENT-RETURNS CORRELATIONS
+--------------------------------------------------------------------------------
+  Symbol  Correlation  Records  Non-zero Sentiment
+RELIANCE    -0.035595      124                   1
+ BTC-USD     0.069083      181                   1
+    AAPL     0.026916      125                   1
+     TCS    -0.026232      124                   1
+    MSFT    -0.077925      125                   1
+
+Average Correlation: -0.008751
+
+5. DATA QUALITY
+--------------------------------------------------------------------------------
+Missing values in sentiment_score: 0
+Total missing values: 0
+
+6. SEQUENCE VERIFICATION
+--------------------------------------------------------------------------------
+Verified sequences: 4/4
+Expected shape: (N, 60, 12)
+Status: ✓ All verified
+
+7. VERIFICATION CHECKLIST
+--------------------------------------------------------------------------------
+✓ Hybrid data loaded
+✓ sentiment_score column present
+✓ 12 features confirmed
+✓ All expected columns present
+✓ No missing values
+✓ Sequence shape (60, 12)
+✓ Correlations computed
+
+================================================================================
+✅ ALL CHECKS PASSED - READY FOR GARCH MODELING
+================================================================================

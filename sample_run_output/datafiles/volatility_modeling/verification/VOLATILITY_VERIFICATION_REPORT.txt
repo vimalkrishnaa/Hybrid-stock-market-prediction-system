@@ -1,0 +1,62 @@
+================================================================================
+VOLATILITY FEATURE INTEGRATION VERIFICATION REPORT
+Generated: 2025-10-23 10:59:50
+================================================================================
+
+1. DATASET OVERVIEW
+--------------------------------------------------------------------------------
+Total records: 863
+Unique symbols: 41
+Date range: 2025-09-22 16:00:00+00:00 to 2025-10-22 05:00:00+00:00
+Total features: 25
+
+2. VOLATILITY FEATURES PRESENT
+--------------------------------------------------------------------------------
+  ✓ conditional_volatility
+  ✓ rolling_volatility_30d
+  ✓ high_volatility_regime
+  ✓ volatility_of_volatility
+  ✓ volatility_ratio
+  ✓ log_volatility
+  ✓ standardized_residuals
+
+3. VOLATILITY STATISTICS
+--------------------------------------------------------------------------------
+Conditional Volatility:
+  Mean: 0.015657
+  Std: 0.018078
+  Min: 0.000000
+  Max: 0.176324
+
+4. CORRELATION ANALYSIS
+--------------------------------------------------------------------------------
+  Conditional Vol vs Returns: 0.0681
+  Rolling Vol vs Returns: 0.0407
+  Conditional Vol vs |Returns|: 0.6668
+  Conditional Vol vs Returns²: 0.5435
+  Vol of Vol vs Returns: 0.0131
+
+5. TOP 5 VOLATILITY SPIKES
+--------------------------------------------------------------------------------
+  1. 2025-10-16 | ^VIX | Vol: 0.176324 | Ret: 0.226260
+  2. 2025-10-14 | ^VIX | Vol: 0.170265 | Ret: 0.093536
+  3. 2025-10-13 | ^VIX | Vol: 0.168560 | Ret: -0.121422
+  4. 2025-10-15 | ^VIX | Vol: 0.164395 | Ret: -0.008169
+  5. 2025-10-20 | ^VIX | Vol: 0.163617 | Ret: -0.122714
+
+6. VOLATILITY REGIME DISTRIBUTION
+--------------------------------------------------------------------------------
+  Normal regime: 657 records (76.1%)
+  High vol regime: 206 records (23.9%)
+
+7. OUTPUT FILES
+--------------------------------------------------------------------------------
+  - sample_run_output/datafiles/volatility_modeling/verification/volatility_returns_correlation.png
+  - sample_run_output/datafiles/volatility_modeling/verification/price_vs_volatility_dual_axis.png
+  - sample_run_output/datafiles/volatility_modeling/verification/volatility_analysis_comprehensive.png
+  - sample_run_output/datafiles/volatility_modeling/verification/top_volatility_spikes.csv
+  - sample_run_output/datafiles/volatility_modeling/verification/VOLATILITY_VERIFICATION_REPORT.txt
+
+================================================================================
+VERIFICATION COMPLETED SUCCESSFULLY
+================================================================================

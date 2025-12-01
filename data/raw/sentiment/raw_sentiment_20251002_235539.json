@@ -1,0 +1,20 @@
+[
+  {
+    "text": "Stock market showing strong bullish trends today",
+    "source": "sample",
+    "created_at": "2025-10-02T23:55:42.820301",
+    "sentiment": "positive"
+  },
+  {
+    "text": "Market volatility concerns investors",
+    "source": "sample",
+    "created_at": "2025-10-02T23:55:42.820301",
+    "sentiment": "negative"
+  },
+  {
+    "text": "Tech stocks continue to perform well",
+    "source": "sample",
+    "created_at": "2025-10-02T23:55:42.820301",
+    "sentiment": "neutral"
+  }
+]

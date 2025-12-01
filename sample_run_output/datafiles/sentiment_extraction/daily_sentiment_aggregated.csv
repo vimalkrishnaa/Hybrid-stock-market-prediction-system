@@ -1,0 +1,2 @@
+date,daily_sentiment_score,sentiment_std,num_sentiments,positive_prob_mean,neutral_prob_mean,negative_prob_mean
+2025-10-02,0.1301196332450445,0.8328364235218179,99,0.4554966661155093,0.21912633724442718,0.3253770328704648

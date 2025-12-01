@@ -1,0 +1,60 @@
+================================================================================
+VOLATILITY MODELING SUMMARY (GARCH)
+Generated: 2025-10-23 10:47:08
+================================================================================
+
+1. DATASET OVERVIEW
+--------------------------------------------------------------------------------
+Total records: 863
+Unique symbols: 41
+Date range: 2025-09-22 16:00:00+00:00 to 2025-10-22 05:00:00+00:00
+Total columns: 23
+
+2. RETURNS STATISTICS
+--------------------------------------------------------------------------------
+Mean return: 0.000991
+Std deviation: 0.023298
+Min return: -0.178981
+Max return: 0.318320
+Skewness: 3.0143
+Kurtosis: 56.4417
+
+3. GARCH MODEL STATISTICS
+--------------------------------------------------------------------------------
+Models fitted: 2
+Average AIC: 159.12
+Average BIC: 164.72
+Average Log-Likelihood: -75.56
+
+Top 5 Models (Lowest AIC):
+  BTC-USD: AIC=141.90, BIC=147.50
+  ETH-USD: AIC=176.34, BIC=181.95
+
+4. VOLATILITY FEATURES STATISTICS
+--------------------------------------------------------------------------------
+Conditional Volatility:
+  Mean: 0.015657
+  Std: 0.018078
+  Min: 0.000000
+  Max: 0.176324
+
+Rolling Volatility (30d):
+  Mean: 0.015070
+  Std: 0.012233
+
+High Volatility Regime:
+  Normal regime: 657 records
+  High vol regime: 206 records
+  Percentage high vol: 23.9%
+
+5. OUTPUT FILES
+--------------------------------------------------------------------------------
+  - sample_run_output/datafiles/volatility_modeling/final_with_volatility.csv
+  - sample_run_output/datafiles/volatility_modeling/garch_model_statistics.csv
+  - sample_run_output/datafiles/volatility_modeling/conditional_volatility_plots.png
+  - sample_run_output/datafiles/volatility_modeling/volatility_distribution.png
+  - sample_run_output/output/volatility_summary.txt
+
+================================================================================
+VOLATILITY MODELING COMPLETED SUCCESSFULLY
+================================================================================

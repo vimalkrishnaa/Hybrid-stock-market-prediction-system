@@ -1,0 +1,17 @@
+# Your API Keys - Saved on October 3, 2025
+# Copy these to environment variables or create a .env file manually
+
+# Twitter API Bearer Token
+TWITTER_BEARER_TOKEN=AAAAAAAAAAAAAAAAAAAAAANK4gEAAAAAnKf%2FOiSfQuoA3UWa5IcNQpt6Y%2Fo%3DpHdhmtMLAD702Uymu3H2VmLJ2VZGyBdftTP0wPZyc1owGPOVPL
+
+# News API Key
+NEWS_API_KEY=625b599a9bba40bc82208108d3e6ae46
+
+# To use these keys:
+# Option 1 (PowerShell - temporary, only for current session):
+#   $env:TWITTER_BEARER_TOKEN="AAAAAAAAAAAAAAAAAAAAAANK4gEAAAAAnKf%2FOiSfQuoA3UWa5IcNQpt6Y%2Fo%3DpHdhmtMLAD702Uymu3H2VmLJ2VZGyBdftTP0wPZyc1owGPOVPL"
+#   $env:NEWS_API_KEY="625b599a9bba40bc82208108d3e6ae46"
+#
+# Option 2 (Create .env file manually):
+#   Create a file named .env in the project root with the above keys
+

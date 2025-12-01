@@ -1,0 +1,46 @@
+================================================================================
+EXTENDED DATA PREPROCESSING REPORT
+Generated: 2025-10-24 12:22:23
+================================================================================
+
+1. PREPROCESSING CONFIGURATION
+--------------------------------------------------------------------------------
+Lookback window: 60 days
+Train/Test split: 80% / 20%
+Number of features: 11
+Normalization: MinMaxScaler (0-1 range)
+
+2. DATASET STATISTICS
+--------------------------------------------------------------------------------
+Total symbols: 31
+Total training sequences: 1,689
+Total testing sequences: 431
+Total sequences: 2,120
+
+3. FEATURES
+--------------------------------------------------------------------------------
+OHLCV Features:
+  - Open, High, Low, Close, Volume
+
+Technical Features:
+  - Returns: Daily percentage change
+  - MA_5, MA_10, MA_20: Moving averages
+  - Volatility: Rolling standard deviation of returns
+  - Momentum: 5-day price momentum
+
+4. OUTPUT FILES
+--------------------------------------------------------------------------------
+Location: data/extended/processed/
+  - sequences/[SYMBOL]/sequences.npz (per-symbol data)
+  - train_test_split/train_data.npz (combined training)
+  - train_test_split/test_data.npz (combined testing)
+  - scaled_data_with_features.csv (full scaled dataset)
+  - scalers/feature_scalers.pkl (for inverse transform)
+
+5. INTEGRATION NOTES
+--------------------------------------------------------------------------------
+✓ Modular design for hybrid model integration
+✓ Returns & Volatility features ready for GARCH integration
+✓ Date indices preserved for FinBERT sentiment alignment
+✓ Time-based split ensures no data leakage
+✓ Scalers saved for prediction phase inverse transform

@@ -1,0 +1,63 @@
+================================================================================
+EXTENDED DATA COLLECTION SUMMARY
+Generated: 2025-10-24 12:15:57
+================================================================================
+
+1. COLLECTION PERIOD
+--------------------------------------------------------------------------------
+Start Date: 2025-04-27
+End Date: 2025-10-24
+Duration: 6 months
+
+2. OVERALL STATISTICS
+--------------------------------------------------------------------------------
+Total Records: 3,980
+Unique Symbols: 31
+Actual Date Range: 2025-04-27 00:00:00+00:00 to 2025-10-24 00:00:00-04:00
+Total Days Covered: 180
+
+3. RECORDS PER SYMBOL
+--------------------------------------------------------------------------------
+  BTC-USD        :  181 records
+  ETH-USD        :  181 records
+  ^GDAXI         :  128 records
+  CL=F           :  127 records
+  GC=F           :  127 records
+  ^FTSE          :  126 records
+  AAPL           :  125 records
+  NVDA           :  125 records
+  NFLX           :  125 records
+  MSFT           :  125 records
+  META           :  125 records
+  ADBE           :  125 records
+  ^DJI           :  125 records
+  GOOGL          :  125 records
+  ^GSPC          :  125 records
+  CRM            :  125 records
+  ^IXIC          :  125 records
+  AMZN           :  125 records
+  TSLA           :  125 records
+  TCS            :  124 records
+  ^HSI           :  124 records
+  KOTAKBANK      :  124 records
+  SBIN           :  124 records
+  RELIANCE       :  124 records
+  ITC            :  124 records
+  INFY           :  124 records
+  HINDUNILVR     :  124 records
+  HDFCBANK       :  124 records
+  BHARTIARTL     :  124 records
+  AXISBANK       :  124 records
+  ^N225          :  121 records
+
+4. DATA SOURCES
+--------------------------------------------------------------------------------
+  yfinance            :   2740 records (68.8%)
+  yfinance_NSE        :   1240 records (31.2%)
+
+5. OUTPUT FILES
+--------------------------------------------------------------------------------
+  - data/extended/raw/extended_stock_data_*.csv
+  - data/extended/raw/extended_stock_data_*.parquet
+  - data/extended/raw/by_symbol/*.csv (individual files)
+  - data/extended/data_collection_summary.txt

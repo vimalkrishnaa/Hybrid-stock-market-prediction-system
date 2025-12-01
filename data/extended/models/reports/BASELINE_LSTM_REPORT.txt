@@ -1,0 +1,120 @@
+================================================================================
+BASELINE LSTM MODEL - TRAINING REPORT
+Generated: 2025-10-24 12:34:56
+================================================================================
+
+1. MODEL ARCHITECTURE
+--------------------------------------------------------------------------------
+Input Shape: (60, 11)
+  - 60 timesteps (60-day lookback window)
+  - 11 features (OHLCV + technical indicators)
+
+Layers:
+  1. LSTM(64 units, return_sequences=True)
+  2. Dropout(0.2)
+  3. LSTM(32 units)
+  4. Dense(16 units, activation='relu')
+  5. Dense(1 unit, activation='linear')
+
+Total Parameters: 32,417
+Optimizer: Adam (learning_rate=0.001)
+Loss Function: Mean Squared Error (MSE)
+
+2. TRAINING CONFIGURATION
+--------------------------------------------------------------------------------
+Batch Size: 32
+Epochs: 50
+Training Samples: 1,689
+Validation Samples: 431
+Callbacks: EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
+
+3. TRAINING RESULTS
+--------------------------------------------------------------------------------
+Final Training Loss: 0.004266
+Final Validation Loss: 0.006555
+Final Training MAE: 0.047841
+Final Validation MAE: 0.060635
+Best Validation Loss: 0.006415
+Best Validation MAE: 0.059390
+
+4. TEST SET PERFORMANCE (NORMALIZED)
+--------------------------------------------------------------------------------
+MSE:  0.006415
+RMSE: 0.080096
+MAE:  0.059397
+R² Score: 0.921751
+
+5. TEST SET PERFORMANCE (ORIGINAL SCALE)
+--------------------------------------------------------------------------------
+Average RMSE: 191.72
+Average MAE: 153.22
+Average MAPE: 1.33%
+Directional Accuracy: 54.88%
+
+6. PER-SYMBOL PERFORMANCE
+--------------------------------------------------------------------------------
+Symbol          Samples    RMSE         MAE          MAPE %    
+--------------------------------------------------------------------------------
+AAPL            13         4.47         3.34         1.32      
+ADBE            13         6.67         5.54         1.62      
+AMZN            13         4.09         3.29         1.51      
+AXISBANK        13         18.08        15.73        1.31      
+BHARTIARTL      13         21.52        16.90        0.85      
+BTC-USD         25         2996.73      2421.33      2.11      
+CL=F            14         1.56         1.31         2.21      
+CRM             13         5.87         5.01         2.01      
+ETH-USD         25         181.54       140.73       3.44      
+GC=F            14         97.13        75.39        1.82      
+GOOGL           13         4.13         3.66         1.47      
+HDFCBANK        13         8.37         6.57         0.66      
+HINDUNILVR      13         21.68        15.55        0.61      
+INFY            13         24.59        21.12        1.42      
+ITC             13         3.76         3.13         0.77      
+KOTAKBANK       13         24.20        17.54        0.81      
+META            13         10.30        7.43         1.04      
+MSFT            13         4.07         3.31         0.64      
+NFLX            13         40.04        26.45        2.27      
+NVDA            13         4.60         3.35         1.82      
+RELIANCE        13         19.26        14.27        1.01      
+SBIN            13         8.98         6.71         0.76      
+TCS             13         39.23        31.87        1.06      
+TSLA            13         11.92        9.65         2.22      
+^DJI            13         368.79       287.70       0.62      
+^FTSE           14         53.13        46.11        0.49      
+^GDAXI          14         197.51       161.01       0.66      
+^GSPC           13         67.98        51.40        0.77      
+^HSI            13         389.59       321.16       1.25      
+^IXIC           13         316.15       249.40       1.10      
+^N225           13         987.50       773.69       1.61      
+
+7. OUTPUT FILES
+--------------------------------------------------------------------------------
+Model: data/extended/models/baseline_lstm_model.h5
+Best Checkpoint: data/extended/models/checkpoints/best_model.h5
+Training History CSV: data/extended/models/training_history.csv
+Training History JSON: data/extended/models/training_history.json
+Plots: data/extended/models/plots/
+Reports: data/extended/models/reports/
+
+8. READINESS FOR HYBRID INTEGRATION
+--------------------------------------------------------------------------------
+Status: READY
+
+The baseline LSTM model has been successfully trained and evaluated.
+The model is now ready for hybrid integration with:
+
+  1. FinBERT Sentiment Analysis
+     - Sentiment scores can be added as an additional feature
+     - Date indices are preserved for alignment
+     - Input shape will become (60, 12) with sentiment
+
+  2. GARCH Volatility Modeling
+     - Conditional volatility features are ready
+     - Returns and volatility columns already included
+     - GARCH features can be merged on date indices
+
+Next Steps:
+  - Integrate FinBERT sentiment scores
+  - Apply GARCH(1,1) volatility modeling
+  - Retrain model with enhanced features
+  - Compare performance improvements

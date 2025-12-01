@@ -1,0 +1,61 @@
+================================================================================
+SENTIMENT EXTRACTION VERIFICATION REPORT
+Generated: 2025-10-23 10:34:55
+================================================================================
+
+1. DATASET OVERVIEW
+--------------------------------------------------------------------------------
+Total records: 904
+Records with sentiment: 41
+Unique symbols: 41
+Date range: 2025-09-21 15:00:00+00:00 to 2025-10-22 05:00:00+00:00
+
+2. SENTIMENT STATISTICS
+--------------------------------------------------------------------------------
+Mean sentiment score: 0.1301
+Std deviation: 0.0000
+Min score: 0.1301
+Max score: 0.1301
+Median score: 0.1301
+
+3. CORRELATION ANALYSIS
+--------------------------------------------------------------------------------
+Sentiment vs Close: nan
+Sentiment vs Volume: nan
+Sentiment vs Price_Change: nan
+Sentiment vs Price_Range: nan
+
+4. PRICE STATISTICS (Records with Sentiment)
+--------------------------------------------------------------------------------
+Mean Close price: $9000.42
+Std deviation: $21197.02
+Min Close: $16.63
+Max Close: $120681.26
+
+5. TOP 5 SYMBOLS BY SENTIMENT
+--------------------------------------------------------------------------------
+  AAPL: 0.1301
+  NFLX: 0.1301
+  NVDA: 0.1301
+  POWERGRID: 0.1301
+  RELIANCE: 0.1301
+
+6. BOTTOM 5 SYMBOLS BY SENTIMENT
+--------------------------------------------------------------------------------
+  AAPL: 0.1301
+  NTPC: 0.1301
+  NVDA: 0.1301
+  POWERGRID: 0.1301
+  RELIANCE: 0.1301
+
+7. OUTPUT FILES
+--------------------------------------------------------------------------------
+  - sample_run_output/datafiles/sentiment_extraction/verification/sample_rows_with_sentiment.csv
+  - sample_run_output/datafiles/sentiment_extraction/verification/correlation_heatmap.png
+  - sample_run_output/datafiles/sentiment_extraction/verification/sentiment_vs_price.png
+  - sample_run_output/datafiles/sentiment_extraction/verification/sentiment_distribution.png
+  - sample_run_output/datafiles/sentiment_extraction/verification/SENTIMENT_VERIFICATION_REPORT.txt
+
+================================================================================
+VERIFICATION COMPLETED SUCCESSFULLY
+================================================================================

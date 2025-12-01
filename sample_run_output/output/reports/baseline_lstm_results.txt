@@ -1,0 +1,60 @@
+================================================================================
+BASELINE LSTM MODEL - EVALUATION REPORT
+Generated: 2025-10-23 11:20:27
+================================================================================
+
+1. MODEL CONFIGURATION
+--------------------------------------------------------------------------------
+Symbol: BTC-USD
+Lookback window: 10 days
+Train/Test split: 70% / 30%
+Training samples: 14
+Testing samples: 6
+Features: Close, sentiment_score, conditional_volatility, Volume
+Epochs: 50
+Batch size: 8
+
+2. MODEL ARCHITECTURE
+--------------------------------------------------------------------------------
+LSTM Layer 1: 50 units (return_sequences=True)
+Dropout: 0.2
+LSTM Layer 2: 50 units
+Dropout: 0.2
+Dense Layer 1: 25 units (relu)
+Dense Layer 2: 1 unit (output)
+Total parameters: 32,501
+
+3. TRAINING RESULTS
+--------------------------------------------------------------------------------
+Epochs trained: 12
+Final training loss: 0.138218
+Final validation loss: 0.184868
+Best validation loss: 0.006957
+
+4. EVALUATION METRICS
+--------------------------------------------------------------------------------
+RMSE: $2155.6747
+MAE: $1864.9139
+MAPE: 1.7331%
+R² Score: -1.7955
+Directional Accuracy: 40.00%
+
+5. PRICE STATISTICS
+--------------------------------------------------------------------------------
+Mean Actual Price: $108282.12
+Mean Predicted Price: $109895.92
+Price Range (Actual): $106467.79 - $110588.93
+Price Range (Predicted): $109542.20 - $110212.97
+
+6. OUTPUT FILES
+--------------------------------------------------------------------------------
+  - sample_run_output/output/models/baseline_lstm_model.h5
+  - sample_run_output/output/models/feature_scaler.pkl
+  - sample_run_output/output/plots/training_history.png
+  - sample_run_output/output/plots/lstm_predictions.png
+  - sample_run_output/output/plots/error_analysis.png
+  - sample_run_output/output/reports/baseline_lstm_results.txt
+
+================================================================================
+MODEL TRAINING AND EVALUATION COMPLETED SUCCESSFULLY
+================================================================================

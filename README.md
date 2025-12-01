@@ -3,6 +3,9 @@
 IndiTrendAI is an end‑to‑end ML pipeline and dashboard for **next‑day stock price prediction** using a **Hybrid LSTM + Attention** model with **technical indicators, news sentiment, and GARCH(1,1) volatility**.  
 It automates data collection, feature engineering, model training/evaluation, and provides an interactive React dashboard for visual analysis.
 
+[![Demo Video](https://img.shields.io/badge/Watch-Demo%20Video-red?style=for-the-badge)](https://drive.google.com/file/d/1jTKyS5zwyAqxeAHFjvECBmNXEL9BfvXf/view?usp=sharing)
+
+
 ---
 ## Challenges Faced
 The most challenging problem I solved recently was building a reliable multi-source data pipeline for my Hybrid Stock Market Prediction System. I had to collect and merge data from NSE, Yahoo Finance, and sentiment sources, and each source had different formats, missing values, and inconsistent timestamps. The pipeline frequently broke due to API failures, rate limits, and irregular data, so I implemented retry logic, validation steps, and automated cleaning to keep the flow stable. Aligning price data with sentiment and volatility data on the exact trading dates was especially difficult and required custom synchronization logic. I also integrated multiple technical indicators and engineered features while keeping performance stable. After several iterations, the final pipeline became fully automated, consistent, and capable of generating high-quality datasets for the hybrid ML model.

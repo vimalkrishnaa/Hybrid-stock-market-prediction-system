@@ -3,7 +3,9 @@
 IndiTrendAI is an end‑to‑end ML pipeline and dashboard for **next‑day stock price prediction** using a **Hybrid LSTM + Attention** model with **technical indicators, news sentiment, and GARCH(1,1) volatility**.  
 It automates data collection, feature engineering, model training/evaluation, and provides an interactive React dashboard for visual analysis.
 
-[![Demo Video](https://img.shields.io/badge/Watch-Demo%20Video-red?style=for-the-badge)](https://drive.google.com/file/d/1jTKyS5zwyAqxeAHFjvECBmNXEL9BfvXf/view?usp=sharing)
+### 🎬 Demo Video  
+[Click here to watch the demo](https://drive.google.com/file/d/1jTKyS5zwyAqxeAHFjvECBmNXEL9BfvXf/view?usp=sharing)
+
 
 
 ---
